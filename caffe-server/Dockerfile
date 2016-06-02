@@ -1,8 +1,7 @@
-FROM kaixhin/caffe
+FROM flyingmouse/caffe
 MAINTAINER Haoming Wang <haoming.exe@gmail.com>
 
 WORKDIR /root/caffe
-RUN sudo apt-get install wget
 RUN rm -rf ~/.matplotlib/fontList.cache
 RUN ./scripts/download_model_binary.py models/bvlc_reference_caffenet
 RUN ./data/ilsvrc12/get_ilsvrc_aux.sh
