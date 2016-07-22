@@ -1,0 +1,5 @@
+*.pyc
+images/cni/*
+images/passeport/*
+!images/cni/motif/
+!images/passeport/motif/
