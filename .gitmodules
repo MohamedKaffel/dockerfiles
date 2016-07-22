@@ -1,0 +1,3 @@
+[submodule "caffe-ocr/web-demo"]
+	path = caffe-ocr/web-demo
+	url = https://flyingmouse@bitbucket.org/berexia/web-demo.git
