@@ -93,7 +93,8 @@ RUN echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf
 RUN ldconfig
 
 RUN make clean && \
-    cp /usr/local/lib/python2.7/site-packages/cv2.so /opt/anaconda2/lib/python2.7/site-packages
+    cp /usr/local/lib/python2.7/site-packages/cv2.so /opt/anaconda2/lib/python2.7/site-packages && \
+    cd ../../.. && rm -rf opencv
 
 # Clone Caffe repo and move into it
 RUN cd /root && git clone https://github.com/BVLC/caffe.git && cd caffe && \
