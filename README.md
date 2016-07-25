@@ -36,9 +36,14 @@ This Docker image Caffe is compiled with OpenCV3 and Anaconda support
 Webdemo
 ----
 
-The demo server requires Python with some dependencies. To make sure you have the dependencies, please run pip install -r examples/web_demo/requirements.txt, and also make sure that you’ve compiled the Python Caffe interface and that it is on your PYTHONPATH
+The demo server requires Python with some dependencies. To make sure you have the dependencies, please run
+
+`pip install -r examples/web_demo/requirements.txt`
+
+and also make sure that you’ve compiled the Python Caffe interface and that it is on your PYTHONPATH
 
 Use Caffe Web Demo Docker:
+
 	docker pull flyingmouse/caffe-ocr
 	docker run -p 80:5000 -d flyingmouse/caffe-ocr
 
