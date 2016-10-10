@@ -68,9 +68,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 # Install Anaconda2
-RUN wget --quiet https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh && \
-    /bin/bash Anaconda2-4.2.0-Linux-x86_64.sh -b -p /opt/anaconda2 && \
-    rm Anaconda2-4.2.0-Linux-x86_64.sh
+RUN wget --quiet http://repo.continuum.io/archive/Anaconda2-4.1.1-Linux-x86_64.sh && \
+    /bin/bash Anaconda2-4.1.1-Linux-x86_64.sh -b -p /opt/anaconda2 && \
+    rm Anaconda2-4.1.1-Linux-x86_64.sh
 ENV PATH /opt/anaconda2/bin:$PATH
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu/:/opt/anaconda2/lib
 
